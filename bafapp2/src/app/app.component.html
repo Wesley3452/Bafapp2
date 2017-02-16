@@ -1,4 +1,20 @@
 <h1>
   {{title}}
 </h1>
-<app-add-member></app-add-member>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a routerLink="/member" routerLinkActive="active">Members</a>
+        </li>
+        <li>
+          <a routerLink="/new-member" routerLinkActive="active">New Member</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
